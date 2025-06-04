@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Minesweeper</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src='index.js' defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="stats">
+        <img src="./src/flag_ok.png" alt="" style="height: auto; max-width: 25%;">
+        <p id="minesCount"></p>
+      </div>
+      <div class="timer">
+        <img src="./src/stopwatch.png" alt="" style="height: auto; max-width: 25%;">
+        <p><span id="hours">00</span>: <span id="minutes">00</span>: <span id="seconds">00</span> </p>
+      </div>
+      <div class="buttons">
+        <button id="pauseBtn" onclick="pause()">Pause</button>
+        <button id="undoBtn" onclick="undo()">Undo</button>
+        <div class="newGame">
+          <select name="" id="sizeGrid">
+            <option value="small" selected>Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <button onclick="newGame()">New Game</button>
+        </div>
+      </div>
+    </div>
+    <div class="main" id="main">
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #cdb4db;
+  }
+  
+  .container {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 100px;
+    background: rgb(192, 154, 154);
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 150px;
+    height: 100px;
+    background: rgb(192, 154, 154);
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  .stats p {
+    margin: 10px;
+  }
+  
+  .main {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .square {
+    width: 25px;
+    height: 25px;
+    background: #a2d2ff;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square img {
+    height: auto;
+    max-width: 75%;
+  }
+  
+  .square.discovered {
+    background: #c8def1;
+  }
+  
+  .square:hover {
+    background: #b2bfca;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(192, 154, 154);
+    margin: 5px;
+  }
+  
+  .newGame {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  
+  .buttons button {
+    cursor: pointer;
+    background: rgb(156, 56, 56);
+    border: none;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .buttons button:hover {
+    background: rgb(184, 104, 104);
+  }
+  
+  .buttons button#undoBtn {
+    background: rgb(120, 120, 120);
+  }
+  
+  .buttons button#undoBtn:hover {
+    background: rgb(150, 150, 150);
+  }
+  
+  
+  .newGame select {
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
