@@ -1,1 +1,1 @@
-Install LiveServer on VScode to Run this Project
+Install Live Server on VScode to Run this Project
